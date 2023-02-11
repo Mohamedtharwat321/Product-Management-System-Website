@@ -1,0 +1,139 @@
+/* ************************ */
+/* below 1040px (landscape tablets) */
+/* ************************ */
+@media (max-width: 65em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+/* ************************ */
+/* below 912px  */
+/* ************************ */
+@media (max-width: 57em) {
+  .container {
+    padding: 0;
+  }
+  html {
+    font-size: 53.125%;
+  }
+}
+/* ************************ */
+/* below 768px  */
+/* ************************ */
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    width: 100%;
+  }
+  .inputs {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #deleteall-btn button {
+    width: 85%;
+  }
+  #deleteall-btn {
+    text-align: center;
+  }
+  .price input {
+    width: 19%;
+  }
+  .search-block {
+    width: 85%;
+    margin: 0 auto;
+  }
+  table {
+    width: 85%;
+    margin: 0 auto;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  #search {
+    padding: 1.7rem 1rem;
+  }
+}
+/* ************************ */
+/* below 624px  */
+/* ************************ */
+@media (max-width: 39em) {
+  html {
+    font-size: 46.875%;
+  }
+  .price input {
+    width: 18%;
+  }
+  .search-box {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .search-block button {
+    width: 100%;
+  }
+  table {
+    font-size: 1.7rem;
+  }
+  th,
+  td {
+    padding: 0.4rem;
+  }
+  tr button {
+    font-size: 1.7rem;
+    padding: 1rem 0.6rem;
+  }
+  input::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+  .price input {
+    width: 12%;
+  }
+  #total {
+    margin-left: 0.4rem;
+  }
+}
+/* ************************ */
+/* below 528 */
+/* ************************ */
+@media (max-width: 33em) {
+  html {
+    font-size: 43.75%;
+  }
+  table {
+    font-size: 1.5rem;
+  }
+  th,
+  td {
+    padding: 0.2rem;
+  }
+  tr button {
+    font-size: 1.5rem;
+    padding: 1rem 0.6rem;
+  }
+  .price input {
+    width: 17%;
+  }
+}
+/* ************************ */
+/* below 416px (landscape tablets) */
+/* ************************ */
+@media (max-width: 26em) {
+  html {
+    font-size: 40.625%;
+  }
+  input {
+    padding: 1rem;
+  }
+  button {
+    padding: 1rem;
+  }
+}
+/* ************************ */
+/* below 392px (landscape tablets) */
+/* ************************ */
+@media (max-width: 24.5em) {
+  html {
+    font-size: 37.5%;
+  }
+}

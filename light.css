@@ -1,0 +1,31 @@
+.light{
+  background-color: white;
+  color: black;
+}
+.light .head-title{
+  color: #3a3a3a;
+}
+.light .head-text{
+  color: #7a7a7a;
+}
+.light button{
+  background-color:  #1688ad;
+}
+.light button:hover {
+  background-color: #1ea2ce;
+}
+.light input{
+  background-color: white;
+  border: 1.5px solid #7a7a7a;
+  color: black;
+}
+.light input:focus{
+  background-color: #d4deff;
+}
+.light input:focus::-webkit-input-placeholder{
+  color: white;
+}
+.light .total{
+  background-color: #3a3a3a !important;
+  color: white;
+}

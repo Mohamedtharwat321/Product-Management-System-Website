@@ -1,0 +1,208 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+
+
+- Line heights
+Default: 1
+
+
+- Letter spacing
+
+
+
+
+--- 05 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* ************************ */
+/* General */
+/* ************************ */
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1;
+  background-color: #222;
+  color: white;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  position: relative;
+}
+.btn {
+  width: 100%;
+}
+/* ************************ */
+/* Header */
+/* ************************ */
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.8rem 0;
+}
+.head .head-title {
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1rem;
+}
+.head .head-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12rem;
+  margin-bottom: 2.4rem;
+}
+
+/* ************************ */
+/* Inputs */
+/* ************************ */
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+input {
+  width: 100%;
+  background-color: #111;
+  color: white;
+  padding: 1.2rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+input:focus {
+  background-color: black;
+  transform: scale(1.1);
+}
+.price input {
+  width: 20%;
+}
+.price :not(:nth-child(1)) {
+  margin-left: 1.4rem;
+}
+#total {
+  font-size: 1.6rem;
+  background-color: #720202;
+  padding: 0.6rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 2rem;
+}
+#total::before {
+  content: "Total:";
+}
+button {
+  border: none;
+  font-size: 2rem;
+  background-color: #19745b;
+  color: white;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: #27af8a;
+  letter-spacing: 0.1rem;
+}
+.btn-submit {
+  margin-bottom: 2.8rem;
+}
+
+/* ************************ */
+/* Outputs */
+/* ************************ */
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+#search {
+  padding: 2rem 1rem;
+  margin-bottom: 1.8rem;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+.search-box button {
+  padding: 1rem 1rem;
+  width: 45%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+table th {
+  text-transform: uppercase;
+}
+th,
+td {
+  padding: 0.5rem;
+}
+tr button {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  padding: 1rem 0.6rem;
+}
+
+/* js code */
+
+#deleteall-btn button {
+  width: 100%;
+  background-color: rgb(131, 12, 35);
+}
+#deleteall-btn button:hover {
+  background-color: rgb(202, 18, 55);
+}
+
+/* Light Mode */
+.fa-sun {
+  color: #ffff7a;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: rgb(75, 75, 75);
+  cursor: pointer;
+  font-size: 2.2rem;
+  position: absolute;
+  right: 6rem;
+  top: 0.1rem;
+  transition: all 0.4s;
+}
+.fa-sun:hover {
+  color: #ffff00;
+}
+.fa-moon {
+  color: white;
+}
+.fa-moon:hover {
+  color: black;
+}

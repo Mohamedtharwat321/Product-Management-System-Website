@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Queries.css" />
+    <link rel="stylesheet" href="light.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Product Managment System</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <i id="sun-icon" class="fa-solid fa-sun"></i>
+      <div class="head">
+        <h2 class="head-title">Cruds</h2>
+        <p class="head-text">Product Managment System</p>
+      </div>
+
+      <div class="inputs">
+        <input type="text" placeholder="Title" id="title" />
+        <div class="price">
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="Price"
+            id="price"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="Taxes"
+            id="taxes"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="Ads"
+            id="ads"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            placeholder="Discount"
+            id="discount"
+          />
+          <small class="total" id="total"></small>
+        </div>
+        <input type="number" placeholder="Count" id="count" />
+        <input type="text" placeholder="Category" id="category" />
+        <button class="btn-submit btn" id="btn-submit">Create</button>
+      </div>
+
+      <div class="outputs">
+        <div class="search-block">
+          <input
+            onkeyup="MakeSearch(this.value)"
+            type="text"
+            placeholder="Search"
+            id="search"
+          />
+          <div class="search-box">
+            <button
+              onclick="SearchMode(this.id)"
+              class="btn"
+              id="btn-searchtitle"
+            >
+              Search By Title
+            </button>
+
+            <button
+              onclick="SearchMode(this.id)"
+              class="btn"
+              id="btn-searchcategory"
+            >
+              Search By Category
+            </button>
+          </div>
+        </div>
+
+        <div id="deleteall-btn"></div>
+
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Taxes</th>
+            <th>Ads</th>
+            <th>Discount</th>
+            <th>total</th>
+            <th>Category</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+            <tbody id="tbody">
+              <tr>
+                <td>1</td>
+                <td>Samsung</td>
+                <td>1000</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>100</td>
+                <td>Phone</td>
+                <td>
+                  <button id="update">Update</button>
+                </td>
+
+                <td>
+                  <button id="delete">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
